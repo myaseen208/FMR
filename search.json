@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Financial Modeling using R",
+    "section": "",
+    "text": "Preface\nThis book contains R codes and tutorials for Financial Modeling using R."
+  },
+  {
+    "objectID": "Ch01.html#decision-review-system",
+    "href": "Ch01.html#decision-review-system",
+    "title": "1  Introduction",
+    "section": "1.1 Decision Review System",
+    "text": "1.1 Decision Review System"
+  },
+  {
+    "objectID": "Ch01.html#medical-laboratory-test",
+    "href": "Ch01.html#medical-laboratory-test",
+    "title": "1  Introduction",
+    "section": "1.2 Medical Laboratory Test",
+    "text": "1.2 Medical Laboratory Test"
+  },
+  {
+    "objectID": "Ch01.html#karachi-stock-exchange",
+    "href": "Ch01.html#karachi-stock-exchange",
+    "title": "1  Introduction",
+    "section": "1.3 Karachi Stock Exchange",
+    "text": "1.3 Karachi Stock Exchange"
+  },
+  {
+    "objectID": "Ch01.html#heavy-rain-in-lahore",
+    "href": "Ch01.html#heavy-rain-in-lahore",
+    "title": "1  Introduction",
+    "section": "1.4 Heavy Rain in Lahore",
+    "text": "1.4 Heavy Rain in Lahore"
+  },
+  {
+    "objectID": "Ch01.html#flood-in-pakistan-2010",
+    "href": "Ch01.html#flood-in-pakistan-2010",
+    "title": "1  Introduction",
+    "section": "1.5 Flood in Pakistan 2010",
+    "text": "1.5 Flood in Pakistan 2010"
+  },
+  {
+    "objectID": "Ch01.html#drought-in-pakistan",
+    "href": "Ch01.html#drought-in-pakistan",
+    "title": "1  Introduction",
+    "section": "1.6 Drought in Pakistan",
+    "text": "1.6 Drought in Pakistan"
+  },
+  {
+    "objectID": "Ch01.html#wheat-crop-in-pakistan",
+    "href": "Ch01.html#wheat-crop-in-pakistan",
+    "title": "1  Introduction",
+    "section": "1.7 Wheat Crop in Pakistan",
+    "text": "1.7 Wheat Crop in Pakistan"
+  },
+  {
+    "objectID": "Ch01.html#introduction",
+    "href": "Ch01.html#introduction",
+    "title": "1  Introduction",
+    "section": "1.8 Introduction",
+    "text": "1.8 Introduction\n\n\\(\\color{red}{\\text{Mathematics}}\\) is the \\(\\color{red}{\\text{language}}\\) of \\(\\color{red}{\\text{Science}}\\)\n\n\\(2 + 2 = 4\\)\n\\(0^{\\circ}C = 32^{\\circ}F\\) (\\(\\color{blue}{\\text{Paradox}}\\))\nEvery action has reaction of same extent but opposite direction. (\\(\\color{blue}{\\text{Newton's Third Law}}\\))\n\n\\(\\color{green}{\\text{Statistics}}\\) is the science of \\(\\color{green}{\\text{uncertainty}}\\) and \\(\\color{green}{\\text{variability}}\\)\n\\(\\color{green}{\\text{Statistics}}\\) is the \\(\\color{green}{\\text{interpretation}}\\) of \\(\\color{green}{\\text{Science}}\\)\n\n\\(\\color{green}{\\text{D}}\\)ata \\(\\color{green}{\\text{D}}\\)riven \\(\\color{green}{\\text{D}}\\)ecisions (\\(\\color{green}{\\text{3Ds}}\\))"
+  },
+  {
+    "objectID": "Ch01.html#reasoning",
+    "href": "Ch01.html#reasoning",
+    "title": "1  Introduction",
+    "section": "1.9 Reasoning",
+    "text": "1.9 Reasoning\n\n\\(\\color{green}{\\text{Deduction:}}\\)\n\nReasoning from \\(\\color{green}{\\text{general}}\\) to \\(\\color{green}{\\text{particular}}\\).\nMan is mortal. → Every human being is mortal.\n\n\\(\\color{red}{\\text{Induction:}}\\)\n\nReasoning from \\(\\color{red}{\\text{particular}}\\) to \\(\\color{red}{\\text{general}}\\)."
+  },
+  {
+    "objectID": "Ch01.html#statistical-reasoning-analysis",
+    "href": "Ch01.html#statistical-reasoning-analysis",
+    "title": "1  Introduction",
+    "section": "1.10 Statistical Reasoning & Analysis",
+    "text": "1.10 Statistical Reasoning & Analysis\n\n\\(\\color{green}{\\text{Statistics}}\\) is the \\(\\color{green}{\\text{science}}\\) of \\(\\color{green}{\\text{uncertainty}}\\) & \\(\\color{green}{\\text{variability}}\\)\nTurning \\(\\color{green}{\\text{Data}}\\) into \\(\\color{green}{\\text{Information}}\\)\n\n\\(\\color{green}{\\text{Data}}\\) → \\(\\color{green}{\\text{Information}}\\) → \\(\\color{green}{\\text{Knowledge}}\\) → \\(\\color{green}{\\text{Wisdom}}\\)\n\n\\(\\color{green}{\\text{Statistics}}\\) is the \\(\\color{green}{\\text{Art}}\\) and \\(\\color{green}{\\text{Science}}\\) of \\(\\color{green}{\\text{learning}}\\) from \\(\\color{green}{\\text{Data}}\\)."
+  },
+  {
+    "objectID": "Ch01.html#variable",
+    "href": "Ch01.html#variable",
+    "title": "1  Introduction",
+    "section": "1.11 Variable",
+    "text": "1.11 Variable\n\n\\(\\color{red}{\\text{Variable:}}\\) A \\(\\color{green}{\\text{characteristic}}\\) that may \\(\\color{green}{\\text{vary}}\\) from \\(\\color{green}{\\text{subject}}\\) to \\(\\color{green}{\\text{subject}}\\)\n\\(\\color{red}{\\text{Variables}}\\) are \\(\\color{green}{\\text{denoted}}\\) by \\(\\color{green}{\\text{last}}\\) \\(\\color{green}{\\text{English}}\\) \\(\\color{green}{\\text{alphabets}}\\) in \\(\\color{green}{\\text{upper}}\\) \\(\\color{green}{\\text{case}}\\)\n\\(\\color{green}{\\text{Different observations}}\\) of a \\(\\color{red}{\\text{variable}}\\) are \\(\\color{green}{\\text{characterized}}\\) by \\(\\color{green}{\\text{subscripts}}\\)"
+  },
+  {
+    "objectID": "Ch01.html#measurement-measurement-scales",
+    "href": "Ch01.html#measurement-measurement-scales",
+    "title": "1  Introduction",
+    "section": "1.12 Measurement & Measurement Scales",
+    "text": "1.12 Measurement & Measurement Scales\n\n\n\nFigure 1.1: Traffic Signal\n\n\n\n\\(\\color{green}{\\text{Measurement}}\\)\n\nThe process of assigning numbers or labels to objects or states in accordance with specific logically accepted rules.\n\n\\(\\color{green}{\\text{Measurement Scales}}\\)\n\nData can be classified according to levels of measurement.\nThe level of measurement of the data often dictates the calculations that can be done to summarize and present the data.\nIt will also determine the statistical tests that should be performed.\n\n\n\n\n\nFigure 1.2: Measurement Scales"
+  },
+  {
+    "objectID": "Ch01.html#types-of-variables",
+    "href": "Ch01.html#types-of-variables",
+    "title": "1  Introduction",
+    "section": "1.13 Types of Variables",
+    "text": "1.13 Types of Variables\n\n1.13.1 Qualitative & Quantitative Variables\n\n\\(\\color{green}{\\text{Qualitative}}\\)\n\nNominal or Ordinal variables\n\n\\(\\color{green}{\\text{Quantitative}}\\)\n\nInterval or Ratio variables\n\nDiscrete\nContinuous\n\nNormal\nNon-Normal\n\n\n\n\n\n\n1.13.2 Dependent & Independent Variables\n\n\\(\\color{green}{\\text{Dependent Variable}}\\)\n\nVariable influenced by other variable(s)\n\n\\(\\color{green}{\\text{Independent Variable}}\\)\n\nVariable influencing other variable(s)"
+  },
+  {
+    "objectID": "Ch01.html#relationship-bw-variables",
+    "href": "Ch01.html#relationship-bw-variables",
+    "title": "1  Introduction",
+    "section": "1.14 Relationship b/w Variables",
+    "text": "1.14 Relationship b/w Variables\n\n1.14.1 Dependent & Independent Variables\n\n\\(\\color{green}{\\text{Expenditures \\& Income}}\\)\n\nExpenditures are influenced by Income.\n\n\\(\\color{green}{\\text{Dependent Variable:}}\\) Expenditures\n\\(\\color{green}{\\text{Independent Variable:}}\\) Income\n\nExpenditures ← Income\n\n\n\n\\(\\color{green}{\\text{CGPA \\& Study Hours}}\\)\n\nCGPA is influenced by Study Hours.\n\n\\(\\color{green}{\\text{Dependent Variable:}}\\) CGPA\n\\(\\color{green}{\\text{Independent Variable:}}\\) Study Hours\n\nCGPA ← Study Hours\n\n\n\n\\(\\color{green}{\\text{Landline Phone Bill \\& Number of Calls}}\\)\n\nLandline Phone Bill is affected by Number of Calls made.\n\n\\(\\color{green}{\\text{Dependent Variable:}}\\) Landline Phone Bill\n\\(\\color{green}{\\text{Independent Variable:}}\\) No. of Calls\n\nBill ← No. of Calls\n\n\n\n\\(\\color{green}{\\text{Crop Production \\& Amount of Fertilizer}}\\)\n\nCrop Production is influenced by Amount of Fertilizer used.\n\n\\(\\color{green}{\\text{Dependent Variable:}}\\) Crop Production\n\\(\\color{green}{\\text{Independent Variable:}}\\) Amount of Fertilizer\n\nCrop Production ← Amount of Fertilizer"
+  },
+  {
+    "objectID": "Ch01.html#types-of-relationship",
+    "href": "Ch01.html#types-of-relationship",
+    "title": "1  Introduction",
+    "section": "1.15 Types of Relationship",
+    "text": "1.15 Types of Relationship\n\n1.15.1 Mathematical Relationship\n\n\\(\\color{green}{\\text{Mathematical Relationship}}\\)\n\n\\(\\color{red}{\\text{Exact Relationship}}\\)\n\\(Y = f\\left(X\\right)\\)\n\\(Y \\mathrel{\\color{red}\\leftarrow} X\\)\n\n\\(\\color{green}{\\text{Relationship between Area and Radius of a Circle}}\\)\n\n\\(A = f\\left(r\\right)\\)\n\\(A = \\pi r^{2}\\)\n\\(A \\mathrel{\\color{red}\\leftarrow} r\\)\n\n\\(\\color{green}{\\text{Relationship between Landline Phone Bill and Number of Calls made}}\\)\n\n\\(\\text{Bill} = f\\left(\\text{No. of Calls}\\right)\\)\n\\(\\text{Bill} \\mathrel{\\color{red}\\leftarrow} \\text{No. of Calls}\\)"
+  },
+  {
+    "objectID": "Ch01.html#statistical-relationship",
+    "href": "Ch01.html#statistical-relationship",
+    "title": "1  Introduction",
+    "section": "1.16 Statistical Relationship",
+    "text": "1.16 Statistical Relationship\n\n\\(\\color{green}{\\text{Statistical Relationship}}\\)\n\n\\(\\color{red}{\\text{Inexact or Probabilistic Relationship}}\\)\n\\(Y = f\\left(X\\right)+\\epsilon\\)\n\\(Y \\mathrel{\\color{red}\\leftarrow} X\\)\n\n\\(\\color{green}{\\text{Relationship between Expenditures and Income}}\\)\n\n\\(\\text{Expenditures} = f\\left(\\text{Income}\\right)+\\epsilon\\)\n\\(\\text{Expenditures} \\mathrel{\\color{red}\\leftarrow} \\text{Income}\\)\n\n\\(\\color{green}{\\text{Relationship between CGPA and Study Hours}}\\)\n\n\\(\\text{CGPA} = f\\left(\\text{Study Hours}\\right)+\\epsilon\\)\n\\(\\text{CGPA} \\mathrel{\\color{red}\\leftarrow} \\text{Study Hours}\\)"
+  },
+  {
+    "objectID": "Ch01.html#statistical-models",
+    "href": "Ch01.html#statistical-models",
+    "title": "1  Introduction",
+    "section": "1.17 Statistical Models",
+    "text": "1.17 Statistical Models\n\n1.17.1 Models\n\n\n\n\n\n\nQuotation\n\n\n\n\\(\\color{green}{\\textit{All models are wrong, but some are useful.}}\\)\n\n\n\n\n\nFigure 1.3: George E P Box"
+  },
+  {
+    "objectID": "Ch01.html#linear-model",
+    "href": "Ch01.html#linear-model",
+    "title": "1  Introduction",
+    "section": "1.18 Linear Model",
+    "text": "1.18 Linear Model\n\n\\(\\color{green}{\\text{Expenditures \\& Income}}\\)\n\n\\(\\color{green}{\\text{Expenditures are influenced by Income}}\\)\n\\(\\text{Expenditures} \\mathrel{\\color{red}\\leftarrow} \\text{Income}\\)\n\n\\(\\color{green}{\\text{Expenditures \\& Gender}}\\)\n\n\\(\\color{green}{\\text{Expenditures are influenced by Gender}}\\)\n\\(\\text{Expenditures} \\mathrel{\\color{red}\\leftarrow} \\text{Gender}\\)\n\n\\(\\color{green}{\\text{Expenditures, Income \\& Gender}}\\)\n\n\\(\\color{green}{\\text{Expenditures are influenced by Income \\& Gender}}\\)\n\\(\\text{Expenditures} \\mathrel{\\color{red}\\leftarrow} \\text{Income} + \\text{Gender}\\)\n\n\\(\\color{green}{\\text{CGPA \\& Study Hours}}\\)\n\n\\(\\color{green}{\\text{CGPA is influenced by Study Hours}}\\)\n\\(\\text{CGPA} \\mathrel{\\color{red}\\leftarrow} \\text{Study Hours}\\)\n\n\\(\\color{green}{\\text{CGPA \\& Gender}}\\)\n\n\\(\\color{green}{\\text{CGPA is influenced by Gender}}\\)\n\\(\\text{CGPA} \\mathrel{\\color{red}\\leftarrow} \\text{Gender}\\)\n\n\\(\\color{green}{\\text{CGPA, Study Hours \\& Gender}}\\)\n\n\\(\\color{green}{\\text{CGPA is influenced by Study Hours \\& Gender}}\\)\n\\(\\text{CGPA} \\mathrel{\\color{red}\\leftarrow} \\text{Study Hours} + \\text{Gender}\\)\n\n\\(\\color{green}{\\text{Weight Gain \\& Intake}}\\)\n\n\\(\\color{green}{\\text{Weight Gain is influenced by Intake}}\\)\n\\(\\text{Weight Gain} \\mathrel{\\color{red}\\leftarrow} \\text{Intake}\\)\n\n\\(\\color{green}{\\text{Weight Gain \\& Feed Type}}\\)\n\n\\(\\color{green}{\\text{Weight Gain is influenced by Feed Type}}\\)\n\\(\\text{Weight Gain} \\mathrel{\\color{red}\\leftarrow} \\text{Feed Type}\\)\n\n\\(\\color{green}{\\text{Weight Gain, Intake \\& Feed Type}}\\)\n\n\\(\\color{green}{\\text{Weight Gain is influenced by Intake \\& Feed Type}}\\)\n\\(\\text{Weight Gain} \\mathrel{\\color{red}\\leftarrow} \\text{Intake} + \\text{Feed Type}\\)\n\n\\(\\color{green}{\\text{Yield \\& Amount of Fertilizer}}\\)\n\n\\(\\color{green}{\\text{Yield of a crop is influenced by Amount of Fertilizer}}\\)\n\\(\\text{Yield} \\mathrel{\\color{red}\\leftarrow} \\text{Amount of Fertilizer}\\)\n\n\\(\\color{green}{\\text{Yield \\& Varieties}}\\)\n\n\\(\\color{green}{\\text{Yield of a crop is influenced by Varieties}}\\)\n\\(\\text{Yield} \\mathrel{\\color{red}\\leftarrow} \\text{Varieties}\\)\n\n\\(\\color{green}{\\text{Yield Amount of Fertilizer \\& Varieties}}\\)\n\n\\(\\color{green}{\\text{Yield of a crop is influenced by Amount of Fertilizer \\& Varieties}}\\)\n\\(\\text{Yield} \\mathrel{\\color{red}\\leftarrow} \\text{Amount of Fertilizer} + \\text{Varieties}\\)"
+  },
+  {
+    "objectID": "Ch01.html#regression-model",
+    "href": "Ch01.html#regression-model",
+    "title": "1  Introduction",
+    "section": "1.19 Regression Model",
+    "text": "1.19 Regression Model\n\n\\(\\color{green}{\\text{Quantify the dependency of a Normal variable on}}\\) \\(\\color{green}{\\text{one or more quantitative variable(s)}}\\)\n\n\n\n\nFigure 1.4: Population Regression"
+  },
+  {
+    "objectID": "Ch01.html#anova-model",
+    "href": "Ch01.html#anova-model",
+    "title": "1  Introduction",
+    "section": "1.20 ANOVA Model",
+    "text": "1.20 ANOVA Model\n\n\\(\\color{green}{\\text{Comparing means of Normal dependent variable}}\\) \\(\\color{green}{\\text{for levels of different factors}}\\)\n\n\n\n\nFigure 1.5: ANOVA Model"
+  },
+  {
+    "objectID": "Ch01.html#ancova-model",
+    "href": "Ch01.html#ancova-model",
+    "title": "1  Introduction",
+    "section": "1.21 ANCOVA Model",
+    "text": "1.21 ANCOVA Model\n\n\\(\\color{green}{\\text{Quantify the dependency of a Normal variable on}}\\) \\(\\color{green}{\\text{one or more quantitative variable(s)}}\\)\n\\(\\color{green}{\\text{Comparing means of Normal dependent variable}}\\) \\(\\color{green}{\\text{for levels of different factors}}\\)\n\n\n\n\nFigure 1.6: ANCOVA Model\n\n\n\n\n\n\n\n\nDefinition\n\n\n\nR is a free, open-source programming language and software environment for statistical computing, bioinformatics, visualization and general computing. R provides a wide variety of statistical and graphical techniques, and is highly extensible. The latest version of R can be obtained from https://cran.r-project.org/bin/windows/base/.\n\n\n RStudio"
+  },
+  {
+    "objectID": "Ch01.html#an-introduction-to-r",
+    "href": "Ch01.html#an-introduction-to-r",
+    "title": "1  Introduction",
+    "section": "1.22 An Introduction to R",
+    "text": "1.22 An Introduction to R\n\n\n\n\nFigure 1.7: An Introduction to R"
+  },
+  {
+    "objectID": "Ch01.html#r-short-reference-card",
+    "href": "Ch01.html#r-short-reference-card",
+    "title": "1  Introduction",
+    "section": "1.23 R Short Reference Card",
+    "text": "1.23 R Short Reference Card\n\n\n\n\nFigure 1.8: R Short Reference Card"
+  },
+  {
+    "objectID": "Ch01.html#new-york-times-article-on-r",
+    "href": "Ch01.html#new-york-times-article-on-r",
+    "title": "1  Introduction",
+    "section": "1.24 2009 New York Times Article on R",
+    "text": "1.24 2009 New York Times Article on R\n\n\n\n\nFigure 1.9: 2009 New York Times Article on R"
+  },
+  {
+    "objectID": "Ch01.html#nature-article-on-r",
+    "href": "Ch01.html#nature-article-on-r",
+    "title": "1  Introduction",
+    "section": "1.25 2015 Nature Article on R",
+    "text": "1.25 2015 Nature Article on R\n\n\n\n\nFigure 1.10: 2015 Nature Article on R"
+  },
+  {
+    "objectID": "Ch02.html#daily-prices",
+    "href": "Ch02.html#daily-prices",
+    "title": "2  Asset Prices to Returns",
+    "section": "2.1 Daily Prices",
+    "text": "2.1 Daily Prices\n\nOutputCode\n\n\n\n\n                SPY      EFA      IJS      EEM      AGG\n2012-12-31 118.2767 42.50937 34.86388 35.77433 87.44240\n2013-01-02 121.3082 43.16728 35.82048 36.47611 87.34005\n2013-01-03 121.0341 42.74861 35.77306 36.21798 87.11963\n2013-01-04 121.5656 42.96542 36.05315 36.29058 87.21409\n2013-01-07 121.2334 42.77851 35.84203 36.01632 87.16685\n2013-01-08 120.8846 42.53928 35.70414 35.69367 87.24558\n\n\n\n\n\n# Get Prices\nsymbols <- c(\"SPY\",\"EFA\", \"IJS\", \"EEM\",\"AGG\")\n\nprices <- \n  getSymbols(\n      Symbols     = symbols\n    , src         = 'yahoo'\n    , from        = \"2012-12-31\"\n    , to          = \"2017-12-31\"\n    , auto.assign = TRUE\n    , warnings    = FALSE\n    ) %>% \n  map(\n    .x =,\n    .f = ~Ad(get(.))\n    ) %>% \n  reduce(merge) %>%\n  `colnames<-`(symbols)\n\nprices %>% \n  head()"
+  },
+  {
+    "objectID": "Ch02.html#converting-daily-prices-to-monthly-prices",
+    "href": "Ch02.html#converting-daily-prices-to-monthly-prices",
+    "title": "2  Asset Prices to Returns",
+    "section": "2.2 Converting Daily Prices to Monthly Prices",
+    "text": "2.2 Converting Daily Prices to Monthly Prices\n\nOutputCode\n\n\n\n\n                SPY      EFA      IJS      EEM      AGG\n2012-12-31 118.2767 42.50938 34.86388 35.77433 87.44237\n2013-01-31 124.3313 44.09432 36.72967 35.66946 86.89922\n2013-02-28 125.9176 43.52613 37.32861 34.85477 87.41265\n2013-03-31 130.6989 44.09432 38.86205 34.49984 87.49882\n2013-04-30 133.2099 46.30726 38.90959 34.91929 88.34631\n2013-05-31 136.3549 44.90922 40.57763 33.23343 86.57836\n\n\n\n\n\n# Converting Daily Prices to Monthly Prices\nprices_monthly <- \n  to.monthly(\n      x         = prices\n    , indexAt   = \"lastof\"\n    , drop.time = TRUE\n    , OHLC      = FALSE\n    )\n\nprices_monthly %>% \n  head()"
+  },
+  {
+    "objectID": "Ch02.html#converting-prices-to-returns",
+    "href": "Ch02.html#converting-prices-to-returns",
+    "title": "2  Asset Prices to Returns",
+    "section": "2.3 Converting Prices to Returns",
+    "text": "2.3 Converting Prices to Returns\n\nOutputCode\n\n\n\n\n                   SPY         EFA          IJS          EEM           AGG\n2013-01-31  0.04992290  0.03660633  0.052133370 -0.002935848 -0.0062309141\n2013-02-28  0.01267816 -0.01296955  0.016175209 -0.023104946  0.0058909296\n2013-03-31  0.03726804  0.01296955  0.040258037 -0.010235228  0.0009852528\n2013-04-30  0.01903046  0.04896777  0.001222631  0.012084684  0.0096391929\n2013-05-31  0.02333500 -0.03065563  0.041976206 -0.049483103 -0.0202145432\n2013-06-30 -0.01343405 -0.02714448 -0.001402766 -0.054728504 -0.0157777746\n\n\n\n\n\n# Converting Prices to Returns\nasset_returns_xts <- \n  Return.calculate(\n        prices = prices_monthly\n      , method = c(\"discrete\", \"log\", \"difference\")[2]\n      ) %>% \n  na.omit()\n\nasset_returns_xts %>% \n  head()"
+  },
+  {
+    "objectID": "Ch02.html#visualizing-asset-returns",
+    "href": "Ch02.html#visualizing-asset-returns",
+    "title": "2  Asset Prices to Returns",
+    "section": "2.4 Visualizing Asset Returns",
+    "text": "2.4 Visualizing Asset Returns\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\nPlot1.1 <- \n  highchart(type = \"stock\") %>%\n  hc_title(text = \"Monthly Log Returns\") %>%\n  hc_add_series(asset_returns_xts[, symbols[1]], name = symbols[1]) %>%\n  hc_add_series(asset_returns_xts[, symbols[2]], name = symbols[2]) %>%\n  hc_add_series(asset_returns_xts[, symbols[3]], name = symbols[3]) %>%\n  hc_add_series(asset_returns_xts[, symbols[4]], name = symbols[4]) %>%\n  hc_add_series(asset_returns_xts[, symbols[5]], name = symbols[5]) %>%\n  hc_add_theme(hc_theme_flat()) %>%\n  hc_navigator(enabled = FALSE) %>%\n  hc_scrollbar(enabled = FALSE) %>%\n  hc_exporting(enabled = TRUE) %>%\n  hc_legend(enabled = TRUE)\nPlot1.1\n\n\n\n\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\nasset_returns_long <- \n  asset_returns_xts %>%\n  qDT() %>% \n  pivot_longer.(names_to = \"asset\", values_to = \"returns\")\n\nPlot1.2 <- \n  asset_returns_long %>%\n  ggplot(aes(x = returns, fill = asset)) +\n  geom_histogram(alpha = 0.45, binwidth = .005) +\n  labs(\n    x     = \"Monthly Returns\"\n  , y     = \"Frequency\"\n  , title = \"Monthly Returns Since 2013\" \n  ) +\n  theme(plot.title = element_text(hjust = 0.5))\n  \nPlot1.2\n\n\n\n\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\nPlot1.3 <- \n  asset_returns_long %>%\n  ggplot(aes(x = returns, fill = asset)) +\n  geom_histogram(alpha = 0.45, binwidth = .01) +\n  facet_wrap(~asset) +\n  labs(\n    x     = \"Monthly Returns\"\n  , y     = \"Distribution\"\n  , title = \"Monthly Returns Since 2013\" \n  ) +\n  theme(plot.title = element_text(hjust = 0.5))\n  \nPlot1.3\n\n\n\n\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\nPlot1.4 <- \n  asset_returns_long %>%\n  ggplot(aes(x = returns, colour = asset)) +\n  geom_density(alpha = 1) +\n  labs(\n    x     = \"monthly returns\"\n  , y     = \"distribution\"\n  , title = \"Monthly Returns Density Since 2013\" \n  ) +\n  theme(plot.title = element_text(hjust = 0.5))\nPlot1.4"
+  },
+  {
+    "objectID": "Ch03.html#portfolio-returns",
+    "href": "Ch03.html#portfolio-returns",
+    "title": "3  Building a Portfolio",
+    "section": "3.1 Portfolio Returns",
+    "text": "3.1 Portfolio Returns\n\n\n\n\n\n\nExample\n\n\n\nNow, we collect individual returns into a portfolio, which is a weighted set of asset returns. Accordingly, the first thing we need to do is assign a weight to each asset. Recall that our portfolio will have the following asset mix:\n\nSPY (S&P500 ETF) weighted 25%\nEFA (a non-US equities ETF) weighted 25%\nIJS (a small-cap value ETF) weighted 20%\nEEM (an emerging-markets ETF) weighted 20%\nAGG (a bond ETF) weighted 10%\n\n\n\n\nOutputCode\n\n\n\n\n                 returns\n2013-01-31  0.0308487703\n2013-02-28 -0.0008696746\n2013-03-31  0.0186626447\n2013-04-30  0.0206247731\n2013-05-31 -0.0053528008\n2013-06-30 -0.0229489579\n\n\n\n\n\nsymbols <- c(\"SPY\",\"EFA\", \"IJS\", \"EEM\",\"AGG\")\n\nprices <- \n  getSymbols(\n      Symbols     = symbols\n    , src         = 'yahoo'\n    , from        = \"2012-12-31\"\n    , to          = \"2017-12-31\"\n    , auto.assign = TRUE\n    , warnings    = FALSE\n    ) %>% \n  map(\n    .x =,\n    .f = ~Ad(get(.))\n    ) %>% \n  reduce(merge) %>%\n  `colnames<-`(symbols)\n\nprices_monthly <- \n  to.monthly(\n      x         = prices\n    , indexAt   = \"lastof\"\n    , drop.time = TRUE\n    , OHLC      = FALSE\n    )\n\nasset_returns_xts <- \n  Return.calculate(\n        prices = prices_monthly\n      , method = c(\"discrete\", \"log\", \"difference\")[2]\n      ) %>% \n  na.omit()\n\nw <- c(0.25, 0.25, 0.20, 0.20, 0.10)\n\nportfolio_returns_xts_rebalanced_monthly <- \n  Return.portfolio(asset_returns_xts, weights = w, rebalance_on = \"months\") %>%\n  `colnames<-`(\"returns\")\n\nportfolio_returns_xts_rebalanced_monthly %>% \n  head()"
+  },
+  {
+    "objectID": "Ch03.html#visualizing-portfolio-returns",
+    "href": "Ch03.html#visualizing-portfolio-returns",
+    "title": "3  Building a Portfolio",
+    "section": "3.2 Visualizing Portfolio Returns",
+    "text": "3.2 Visualizing Portfolio Returns\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\nPlot2.1 <- \n  highchart(type = \"stock\") %>%\n  hc_title(text = \"Portfolio Monthly Returns\") %>%\n  hc_add_series(portfolio_returns_xts_rebalanced_monthly$returns,\n                name = \"Rebalanced Monthly\",\n                color = \"cornflowerblue\") %>%\n  hc_add_theme(hc_theme_flat()) %>%\n  hc_navigator(enabled = FALSE) %>%\n  hc_scrollbar(enabled = FALSE) %>%\n  hc_legend(enabled = TRUE) %>%\n  hc_exporting(enabled = TRUE)\n\nPlot2.1\n\n\n\n\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\nhc_portfolio <-\n  hist(portfolio_returns_xts_rebalanced_monthly$returns,\n       breaks = 50,\n       plot = FALSE)\nhchart(hc_portfolio,\n       color = \"cornflowerblue\",\n       name = \"Portfolio\") %>%\n  hc_title(text = \"Portfolio Returns Distribution\") %>%\n  hc_add_theme(hc_theme_flat()) %>%\n  hc_exporting(enabled = TRUE)"
+  }
+]

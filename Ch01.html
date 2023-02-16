@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Financial Modeling using R - 1&nbsp; Introduction</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Part02.html" rel="next">
+<link href="./Part01.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Financial Modeling using R</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Part01.html" class="sidebar-item-text sidebar-link">Introduction</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch01.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Part02.html" class="sidebar-item-text sidebar-link">Returns</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch02.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Asset Prices to Returns</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch03.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Building a Portfolio</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Part03.html" class="sidebar-item-text sidebar-link">Risk</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch04.html" class="sidebar-item-text sidebar-link">Standard Deviation</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch05.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Skewness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch06.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Kurtosis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Part04.html" class="sidebar-item-text sidebar-link">Portfolio Theory</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch07.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sharpe Ratio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch08.html" class="sidebar-item-text sidebar-link">CAPM</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch09.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fama-French Factor Model</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Part05.html" class="sidebar-item-text sidebar-link">Practice and Applications</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch10.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Component Contribution to Standard Deviation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ch11.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Monte Carlo Simulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#decision-review-system" id="toc-decision-review-system" class="nav-link active" data-scroll-target="#decision-review-system"><span class="toc-section-number">1.1</span>  Decision Review System</a></li>
+  <li><a href="#medical-laboratory-test" id="toc-medical-laboratory-test" class="nav-link" data-scroll-target="#medical-laboratory-test"><span class="toc-section-number">1.2</span>  Medical Laboratory Test</a></li>
+  <li><a href="#karachi-stock-exchange" id="toc-karachi-stock-exchange" class="nav-link" data-scroll-target="#karachi-stock-exchange"><span class="toc-section-number">1.3</span>  Karachi Stock Exchange</a></li>
+  <li><a href="#heavy-rain-in-lahore" id="toc-heavy-rain-in-lahore" class="nav-link" data-scroll-target="#heavy-rain-in-lahore"><span class="toc-section-number">1.4</span>  Heavy Rain in Lahore</a></li>
+  <li><a href="#flood-in-pakistan-2010" id="toc-flood-in-pakistan-2010" class="nav-link" data-scroll-target="#flood-in-pakistan-2010"><span class="toc-section-number">1.5</span>  Flood in Pakistan 2010</a></li>
+  <li><a href="#drought-in-pakistan" id="toc-drought-in-pakistan" class="nav-link" data-scroll-target="#drought-in-pakistan"><span class="toc-section-number">1.6</span>  Drought in Pakistan</a></li>
+  <li><a href="#wheat-crop-in-pakistan" id="toc-wheat-crop-in-pakistan" class="nav-link" data-scroll-target="#wheat-crop-in-pakistan"><span class="toc-section-number">1.7</span>  Wheat Crop in Pakistan</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="toc-section-number">1.8</span>  Introduction</a></li>
+  <li><a href="#reasoning" id="toc-reasoning" class="nav-link" data-scroll-target="#reasoning"><span class="toc-section-number">1.9</span>  Reasoning</a></li>
+  <li><a href="#statistical-reasoning-analysis" id="toc-statistical-reasoning-analysis" class="nav-link" data-scroll-target="#statistical-reasoning-analysis"><span class="toc-section-number">1.10</span>  Statistical Reasoning &amp; Analysis</a></li>
+  <li><a href="#variable" id="toc-variable" class="nav-link" data-scroll-target="#variable"><span class="toc-section-number">1.11</span>  Variable</a></li>
+  <li><a href="#measurement-measurement-scales" id="toc-measurement-measurement-scales" class="nav-link" data-scroll-target="#measurement-measurement-scales"><span class="toc-section-number">1.12</span>  Measurement &amp; Measurement Scales</a></li>
+  <li><a href="#types-of-variables" id="toc-types-of-variables" class="nav-link" data-scroll-target="#types-of-variables"><span class="toc-section-number">1.13</span>  Types of Variables</a>
+  <ul class="collapse">
+  <li><a href="#qualitative-quantitative-variables" id="toc-qualitative-quantitative-variables" class="nav-link" data-scroll-target="#qualitative-quantitative-variables"><span class="toc-section-number">1.13.1</span>  Qualitative &amp; Quantitative Variables</a></li>
+  <li><a href="#dependent-independent-variables" id="toc-dependent-independent-variables" class="nav-link" data-scroll-target="#dependent-independent-variables"><span class="toc-section-number">1.13.2</span>  Dependent &amp; Independent Variables</a></li>
+  </ul></li>
+  <li><a href="#relationship-bw-variables" id="toc-relationship-bw-variables" class="nav-link" data-scroll-target="#relationship-bw-variables"><span class="toc-section-number">1.14</span>  Relationship b/w Variables</a>
+  <ul class="collapse">
+  <li><a href="#dependent-independent-variables-1" id="toc-dependent-independent-variables-1" class="nav-link" data-scroll-target="#dependent-independent-variables-1"><span class="toc-section-number">1.14.1</span>  Dependent &amp; Independent Variables</a></li>
+  </ul></li>
+  <li><a href="#types-of-relationship" id="toc-types-of-relationship" class="nav-link" data-scroll-target="#types-of-relationship"><span class="toc-section-number">1.15</span>  Types of Relationship</a>
+  <ul class="collapse">
+  <li><a href="#mathematical-relationship" id="toc-mathematical-relationship" class="nav-link" data-scroll-target="#mathematical-relationship"><span class="toc-section-number">1.15.1</span>  Mathematical Relationship</a></li>
+  </ul></li>
+  <li><a href="#statistical-relationship" id="toc-statistical-relationship" class="nav-link" data-scroll-target="#statistical-relationship"><span class="toc-section-number">1.16</span>  Statistical Relationship</a></li>
+  <li><a href="#statistical-models" id="toc-statistical-models" class="nav-link" data-scroll-target="#statistical-models"><span class="toc-section-number">1.17</span>  Statistical Models</a>
+  <ul class="collapse">
+  <li><a href="#models" id="toc-models" class="nav-link" data-scroll-target="#models"><span class="toc-section-number">1.17.1</span>  Models</a></li>
+  </ul></li>
+  <li><a href="#linear-model" id="toc-linear-model" class="nav-link" data-scroll-target="#linear-model"><span class="toc-section-number">1.18</span>  Linear Model</a></li>
+  <li><a href="#regression-model" id="toc-regression-model" class="nav-link" data-scroll-target="#regression-model"><span class="toc-section-number">1.19</span>  Regression Model</a></li>
+  <li><a href="#anova-model" id="toc-anova-model" class="nav-link" data-scroll-target="#anova-model"><span class="toc-section-number">1.20</span>  ANOVA Model</a></li>
+  <li><a href="#ancova-model" id="toc-ancova-model" class="nav-link" data-scroll-target="#ancova-model"><span class="toc-section-number">1.21</span>  ANCOVA Model</a></li>
+  <li><a href="#an-introduction-to-r" id="toc-an-introduction-to-r" class="nav-link" data-scroll-target="#an-introduction-to-r"><span class="toc-section-number">1.22</span>  An Introduction to R</a></li>
+  <li><a href="#r-short-reference-card" id="toc-r-short-reference-card" class="nav-link" data-scroll-target="#r-short-reference-card"><span class="toc-section-number">1.23</span>  R Short Reference Card</a></li>
+  <li><a href="#new-york-times-article-on-r" id="toc-new-york-times-article-on-r" class="nav-link" data-scroll-target="#new-york-times-article-on-r"><span class="toc-section-number">1.24</span>  2009 New York Times Article on R</a></li>
+  <li><a href="#nature-article-on-r" id="toc-nature-article-on-r" class="nav-link" data-scroll-target="#nature-article-on-r"><span class="toc-section-number">1.25</span>  2015 Nature Article on R</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell" data-hash="Ch01_cache/html/unnamed-chunk-1_1b7bca8b280ef747f4fc70c52406ede8">
+
+</div>
+<div class="cell" data-hash="Ch01_cache/html/Reading-Packages_0a71bd4c94227b06c2d2455310794372">
+
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Quotation (William E. Deming)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>In God we trust, all others must bring data.</em></p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Quotation (H.G. Wells)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Statistical thinking will one day be as necessary a qualification for efficient citizenship as the ability to read &amp; write.</em></p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Quotation (R. A. Fisher)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>To call in the statistician after the experiment is done may be no more than asking him to perform a postmortem examination: he may be able to say what the experiment died of.</em></p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Quotation (Abraham Maslow)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>If all you have is a hammer, everything looks like a nail.</em></p>
+</div>
+</div>
+<div class="cell" data-layout-align="center" data-hash="Ch01_cache/html/unnamed-chunk-3_a16f5b70293134022b07015d9e808bc8">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Ch01_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:40.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="decision-review-system" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="decision-review-system"><span class="header-section-number">1.1</span> Decision Review System</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/ZPNUfUk3VNw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="medical-laboratory-test" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="medical-laboratory-test"><span class="header-section-number">1.2</span> Medical Laboratory Test</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/R0gldekyvLw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="karachi-stock-exchange" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="karachi-stock-exchange"><span class="header-section-number">1.3</span> Karachi Stock Exchange</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/jcvnGJF7GVQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="heavy-rain-in-lahore" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="heavy-rain-in-lahore"><span class="header-section-number">1.4</span> Heavy Rain in Lahore</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/WIhUuJPpa84" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="flood-in-pakistan-2010" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="flood-in-pakistan-2010"><span class="header-section-number">1.5</span> Flood in Pakistan 2010</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/RNPY3LfnKLU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="drought-in-pakistan" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="drought-in-pakistan"><span class="header-section-number">1.6</span> Drought in Pakistan</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/3kPBgwgrU_U" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="wheat-crop-in-pakistan" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="wheat-crop-in-pakistan"><span class="header-section-number">1.7</span> Wheat Crop in Pakistan</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/Ryi0oZV-fd8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="introduction" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.8</span> Introduction</h2>
+<ul>
+<li><span class="math inline">\(\color{red}{\text{Mathematics}}\)</span> is the <span class="math inline">\(\color{red}{\text{language}}\)</span> of <span class="math inline">\(\color{red}{\text{Science}}\)</span>
+<ul>
+<li><span class="math inline">\(2 + 2 = 4\)</span></li>
+<li><span class="math inline">\(0^{\circ}C = 32^{\circ}F\)</span> (<span class="math inline">\(\color{blue}{\text{Paradox}}\)</span>)</li>
+<li>Every action has reaction of same extent but opposite direction. (<span class="math inline">\(\color{blue}{\text{Newton's Third Law}}\)</span>)</li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Statistics}}\)</span> is the science of <span class="math inline">\(\color{green}{\text{uncertainty}}\)</span> and <span class="math inline">\(\color{green}{\text{variability}}\)</span></li>
+<li><span class="math inline">\(\color{green}{\text{Statistics}}\)</span> is the <span class="math inline">\(\color{green}{\text{interpretation}}\)</span> of <span class="math inline">\(\color{green}{\text{Science}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{D}}\)</span>ata <span class="math inline">\(\color{green}{\text{D}}\)</span>riven <span class="math inline">\(\color{green}{\text{D}}\)</span>ecisions (<span class="math inline">\(\color{green}{\text{3Ds}}\)</span>)</li>
+</ul></li>
+</ul>
+</section>
+<section id="reasoning" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="reasoning"><span class="header-section-number">1.9</span> Reasoning</h2>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Deduction:}}\)</span>
+<ul>
+<li>Reasoning from <span class="math inline">\(\color{green}{\text{general}}\)</span> to <span class="math inline">\(\color{green}{\text{particular}}\)</span>.</li>
+<li>Man is mortal. → Every human being is mortal.</li>
+</ul></li>
+<li><span class="math inline">\(\color{red}{\text{Induction:}}\)</span>
+<ul>
+<li>Reasoning from <span class="math inline">\(\color{red}{\text{particular}}\)</span> to <span class="math inline">\(\color{red}{\text{general}}\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="statistical-reasoning-analysis" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="statistical-reasoning-analysis"><span class="header-section-number">1.10</span> Statistical Reasoning &amp; Analysis</h2>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Statistics}}\)</span> is the <span class="math inline">\(\color{green}{\text{science}}\)</span> of <span class="math inline">\(\color{green}{\text{uncertainty}}\)</span> &amp; <span class="math inline">\(\color{green}{\text{variability}}\)</span></li>
+<li>Turning <span class="math inline">\(\color{green}{\text{Data}}\)</span> into <span class="math inline">\(\color{green}{\text{Information}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Data}}\)</span> → <span class="math inline">\(\color{green}{\text{Information}}\)</span> → <span class="math inline">\(\color{green}{\text{Knowledge}}\)</span> → <span class="math inline">\(\color{green}{\text{Wisdom}}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Statistics}}\)</span> is the <span class="math inline">\(\color{green}{\text{Art}}\)</span> and <span class="math inline">\(\color{green}{\text{Science}}\)</span> of <span class="math inline">\(\color{green}{\text{learning}}\)</span> from <span class="math inline">\(\color{green}{\text{Data}}\)</span>.</li>
+</ul>
+</section>
+<section id="variable" class="level2" data-number="1.11">
+<h2 data-number="1.11" class="anchored" data-anchor-id="variable"><span class="header-section-number">1.11</span> Variable</h2>
+<ul>
+<li><span class="math inline">\(\color{red}{\text{Variable:}}\)</span> A <span class="math inline">\(\color{green}{\text{characteristic}}\)</span> that may <span class="math inline">\(\color{green}{\text{vary}}\)</span> from <span class="math inline">\(\color{green}{\text{subject}}\)</span> to <span class="math inline">\(\color{green}{\text{subject}}\)</span></li>
+<li><span class="math inline">\(\color{red}{\text{Variables}}\)</span> are <span class="math inline">\(\color{green}{\text{denoted}}\)</span> by <span class="math inline">\(\color{green}{\text{last}}\)</span> <span class="math inline">\(\color{green}{\text{English}}\)</span> <span class="math inline">\(\color{green}{\text{alphabets}}\)</span> in <span class="math inline">\(\color{green}{\text{upper}}\)</span> <span class="math inline">\(\color{green}{\text{case}}\)</span></li>
+<li><span class="math inline">\(\color{green}{\text{Different observations}}\)</span> of a <span class="math inline">\(\color{red}{\text{variable}}\)</span> are <span class="math inline">\(\color{green}{\text{characterized}}\)</span> by <span class="math inline">\(\color{green}{\text{subscripts}}\)</span></li>
+</ul>
+</section>
+<section id="measurement-measurement-scales" class="level2" data-number="1.12">
+<h2 data-number="1.12" class="anchored" data-anchor-id="measurement-measurement-scales"><span class="header-section-number">1.12</span> Measurement &amp; Measurement Scales</h2>
+<div id="fig-TrafficSignal1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/TrafficSignals.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.1: Traffic Signal</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Measurement}}\)</span>
+<ul>
+<li>The process of assigning numbers or labels to objects or states in accordance with specific logically accepted rules.</li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Measurement Scales}}\)</span>
+<ul>
+<li>Data can be classified according to levels of measurement.</li>
+<li>The level of measurement of the data often dictates the calculations that can be done to summarize and present the data.</li>
+<li>It will also determine the statistical tests that should be performed.</li>
+</ul></li>
+</ul>
+<div id="fig-MeasurementScales1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/TypesofMeasurementScales.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.2: Measurement Scales</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="types-of-variables" class="level2" data-number="1.13">
+<h2 data-number="1.13" class="anchored" data-anchor-id="types-of-variables"><span class="header-section-number">1.13</span> Types of Variables</h2>
+<section id="qualitative-quantitative-variables" class="level3" data-number="1.13.1">
+<h3 data-number="1.13.1" class="anchored" data-anchor-id="qualitative-quantitative-variables"><span class="header-section-number">1.13.1</span> Qualitative &amp; Quantitative Variables</h3>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Qualitative}}\)</span>
+<ul>
+<li>Nominal or Ordinal variables</li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Quantitative}}\)</span>
+<ul>
+<li>Interval or Ratio variables
+<ul>
+<li>Discrete</li>
+<li>Continuous
+<ul>
+<li>Normal</li>
+<li>Non-Normal</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="dependent-independent-variables" class="level3" data-number="1.13.2">
+<h3 data-number="1.13.2" class="anchored" data-anchor-id="dependent-independent-variables"><span class="header-section-number">1.13.2</span> Dependent &amp; Independent Variables</h3>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Dependent Variable}}\)</span>
+<ul>
+<li>Variable influenced by other variable(s)</li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Independent Variable}}\)</span>
+<ul>
+<li>Variable influencing other variable(s)</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="relationship-bw-variables" class="level2" data-number="1.14">
+<h2 data-number="1.14" class="anchored" data-anchor-id="relationship-bw-variables"><span class="header-section-number">1.14</span> Relationship b/w Variables</h2>
+<section id="dependent-independent-variables-1" class="level3" data-number="1.14.1">
+<h3 data-number="1.14.1" class="anchored" data-anchor-id="dependent-independent-variables-1"><span class="header-section-number">1.14.1</span> Dependent &amp; Independent Variables</h3>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Expenditures \&amp; Income}}\)</span>
+<ul>
+<li>Expenditures are influenced by Income.
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Dependent Variable:}}\)</span> Expenditures</li>
+<li><span class="math inline">\(\color{green}{\text{Independent Variable:}}\)</span> Income
+<ul>
+<li>Expenditures <span style="color:red">←</span> Income</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{CGPA \&amp; Study Hours}}\)</span>
+<ul>
+<li>CGPA is influenced by Study Hours.
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Dependent Variable:}}\)</span> CGPA</li>
+<li><span class="math inline">\(\color{green}{\text{Independent Variable:}}\)</span> Study Hours
+<ul>
+<li>CGPA <span style="color:red">←</span> Study Hours</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Landline Phone Bill \&amp; Number of Calls}}\)</span>
+<ul>
+<li>Landline Phone Bill is affected by Number of Calls made.
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Dependent Variable:}}\)</span> Landline Phone Bill</li>
+<li><span class="math inline">\(\color{green}{\text{Independent Variable:}}\)</span> No.&nbsp;of Calls
+<ul>
+<li>Bill <span style="color:red">←</span> No.&nbsp;of Calls</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Crop Production \&amp; Amount of Fertilizer}}\)</span>
+<ul>
+<li>Crop Production is influenced by Amount of Fertilizer used.
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Dependent Variable:}}\)</span> Crop Production</li>
+<li><span class="math inline">\(\color{green}{\text{Independent Variable:}}\)</span> Amount of Fertilizer
+<ul>
+<li>Crop Production <span style="color:red">←</span> Amount of Fertilizer</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="types-of-relationship" class="level2" data-number="1.15">
+<h2 data-number="1.15" class="anchored" data-anchor-id="types-of-relationship"><span class="header-section-number">1.15</span> Types of Relationship</h2>
+<section id="mathematical-relationship" class="level3" data-number="1.15.1">
+<h3 data-number="1.15.1" class="anchored" data-anchor-id="mathematical-relationship"><span class="header-section-number">1.15.1</span> Mathematical Relationship</h3>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Mathematical Relationship}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{red}{\text{Exact Relationship}}\)</span></li>
+<li><span class="math inline">\(Y = f\left(X\right)\)</span></li>
+<li><span class="math inline">\(Y \mathrel{\color{red}\leftarrow} X\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Relationship between Area and Radius of a Circle}}\)</span>
+<ul>
+<li><span class="math inline">\(A = f\left(r\right)\)</span></li>
+<li><span class="math inline">\(A = \pi r^{2}\)</span></li>
+<li><span class="math inline">\(A \mathrel{\color{red}\leftarrow} r\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Relationship between Landline Phone Bill and Number of Calls made}}\)</span>
+<ul>
+<li><span class="math inline">\(\text{Bill} = f\left(\text{No. of Calls}\right)\)</span></li>
+<li><span class="math inline">\(\text{Bill} \mathrel{\color{red}\leftarrow} \text{No. of Calls}\)</span></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="statistical-relationship" class="level2" data-number="1.16">
+<h2 data-number="1.16" class="anchored" data-anchor-id="statistical-relationship"><span class="header-section-number">1.16</span> Statistical Relationship</h2>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Statistical Relationship}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{red}{\text{Inexact or Probabilistic Relationship}}\)</span></li>
+<li><span class="math inline">\(Y = f\left(X\right)+\epsilon\)</span></li>
+<li><span class="math inline">\(Y \mathrel{\color{red}\leftarrow} X\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Relationship between Expenditures and Income}}\)</span>
+<ul>
+<li><span class="math inline">\(\text{Expenditures} = f\left(\text{Income}\right)+\epsilon\)</span></li>
+<li><span class="math inline">\(\text{Expenditures} \mathrel{\color{red}\leftarrow} \text{Income}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Relationship between CGPA and Study Hours}}\)</span>
+<ul>
+<li><span class="math inline">\(\text{CGPA} = f\left(\text{Study Hours}\right)+\epsilon\)</span></li>
+<li><span class="math inline">\(\text{CGPA} \mathrel{\color{red}\leftarrow} \text{Study Hours}\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="statistical-models" class="level2" data-number="1.17">
+<h2 data-number="1.17" class="anchored" data-anchor-id="statistical-models"><span class="header-section-number">1.17</span> Statistical Models</h2>
+<section id="models" class="level3" data-number="1.17.1">
+<h3 data-number="1.17.1" class="anchored" data-anchor-id="models"><span class="header-section-number">1.17.1</span> Models</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Quotation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\color{green}{\textit{All models are wrong, but some are useful.}}\)</span></p>
+</div>
+</div>
+<div id="fig-GeorgeEPBox1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/GeorgeEPBox.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.3: George E P Box</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="linear-model" class="level2" data-number="1.18">
+<h2 data-number="1.18" class="anchored" data-anchor-id="linear-model"><span class="header-section-number">1.18</span> Linear Model</h2>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Expenditures \&amp; Income}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Expenditures are influenced by Income}}\)</span></li>
+<li><span class="math inline">\(\text{Expenditures} \mathrel{\color{red}\leftarrow} \text{Income}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Expenditures \&amp; Gender}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Expenditures are influenced by Gender}}\)</span></li>
+<li><span class="math inline">\(\text{Expenditures} \mathrel{\color{red}\leftarrow} \text{Gender}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Expenditures, Income \&amp; Gender}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Expenditures are influenced by Income \&amp; Gender}}\)</span></li>
+<li><span class="math inline">\(\text{Expenditures} \mathrel{\color{red}\leftarrow} \text{Income} + \text{Gender}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{CGPA \&amp; Study Hours}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{CGPA is influenced by Study Hours}}\)</span></li>
+<li><span class="math inline">\(\text{CGPA} \mathrel{\color{red}\leftarrow} \text{Study Hours}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{CGPA \&amp; Gender}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{CGPA is influenced by Gender}}\)</span></li>
+<li><span class="math inline">\(\text{CGPA} \mathrel{\color{red}\leftarrow} \text{Gender}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{CGPA, Study Hours \&amp; Gender}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{CGPA is influenced by Study Hours \&amp; Gender}}\)</span></li>
+<li><span class="math inline">\(\text{CGPA} \mathrel{\color{red}\leftarrow} \text{Study Hours} + \text{Gender}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Weight Gain \&amp; Intake}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Weight Gain is influenced by Intake}}\)</span></li>
+<li><span class="math inline">\(\text{Weight Gain} \mathrel{\color{red}\leftarrow} \text{Intake}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Weight Gain \&amp; Feed Type}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Weight Gain is influenced by Feed Type}}\)</span></li>
+<li><span class="math inline">\(\text{Weight Gain} \mathrel{\color{red}\leftarrow} \text{Feed Type}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Weight Gain, Intake \&amp; Feed Type}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Weight Gain is influenced by Intake \&amp; Feed Type}}\)</span></li>
+<li><span class="math inline">\(\text{Weight Gain} \mathrel{\color{red}\leftarrow} \text{Intake} + \text{Feed Type}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Yield \&amp; Amount of Fertilizer}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Yield of a crop is influenced by Amount of Fertilizer}}\)</span></li>
+<li><span class="math inline">\(\text{Yield} \mathrel{\color{red}\leftarrow} \text{Amount of Fertilizer}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Yield \&amp; Varieties}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Yield of a crop is influenced by Varieties}}\)</span></li>
+<li><span class="math inline">\(\text{Yield} \mathrel{\color{red}\leftarrow} \text{Varieties}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\color{green}{\text{Yield Amount of Fertilizer \&amp; Varieties}}\)</span>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Yield of a crop is influenced by Amount of Fertilizer \&amp; Varieties}}\)</span></li>
+<li><span class="math inline">\(\text{Yield} \mathrel{\color{red}\leftarrow} \text{Amount of Fertilizer} + \text{Varieties}\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="regression-model" class="level2" data-number="1.19">
+<h2 data-number="1.19" class="anchored" data-anchor-id="regression-model"><span class="header-section-number">1.19</span> Regression Model</h2>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Quantify the dependency of a Normal variable on}}\)</span> <span class="math inline">\(\color{green}{\text{one or more quantitative variable(s)}}\)</span></li>
+</ul>
+<div id="fig-PopReg1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/PopRegFn.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.4: Population Regression</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="anova-model" class="level2" data-number="1.20">
+<h2 data-number="1.20" class="anchored" data-anchor-id="anova-model"><span class="header-section-number">1.20</span> ANOVA Model</h2>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Comparing means of Normal dependent variable}}\)</span> <span class="math inline">\(\color{green}{\text{for levels of different factors}}\)</span></li>
+</ul>
+<div id="fig-ANOVA1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/ANOVANormalMeans.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.5: ANOVA Model</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="ancova-model" class="level2" data-number="1.21">
+<h2 data-number="1.21" class="anchored" data-anchor-id="ancova-model"><span class="header-section-number">1.21</span> ANCOVA Model</h2>
+<ul>
+<li><span class="math inline">\(\color{green}{\text{Quantify the dependency of a Normal variable on}}\)</span> <span class="math inline">\(\color{green}{\text{one or more quantitative variable(s)}}\)</span></li>
+<li><span class="math inline">\(\color{green}{\text{Comparing means of Normal dependent variable}}\)</span> <span class="math inline">\(\color{green}{\text{for levels of different factors}}\)</span></li>
+</ul>
+<div id="fig-ANCOVA1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/ANCOVA.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.6: ANCOVA Model</figcaption><p></p>
+</figure>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Definition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>R</code> is a free, open-source programming language and software environment for statistical computing, bioinformatics, visualization and general computing. <code>R</code> provides a wide variety of statistical and graphical techniques, and is highly extensible. The latest version of <code>R</code> can be obtained from <a href="https://cran.r-project.org/bin/windows/base/" style="font-size: 13pt;">https://cran.r-project.org/bin/windows/base/</a>.</p>
+</div>
+</div>
+<p> <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a></p>
+</section>
+<section id="an-introduction-to-r" class="level2" data-number="1.22">
+<h2 data-number="1.22" class="anchored" data-anchor-id="an-introduction-to-r"><span class="header-section-number">1.22</span> An Introduction to R</h2>
+<div id="fig-IntroR" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<iframe width="100%" height="600" src="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">
+</iframe>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.7: An Introduction to R</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="r-short-reference-card" class="level2" data-number="1.23">
+<h2 data-number="1.23" class="anchored" data-anchor-id="r-short-reference-card"><span class="header-section-number">1.23</span> R Short Reference Card</h2>
+<div id="fig-RefCardR" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<iframe width="100%" height="600" src="https://cran.r-project.org/doc/contrib/Short-refcard.pdf">
+</iframe>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.8: R Short Reference Card</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="new-york-times-article-on-r" class="level2" data-number="1.24">
+<h2 data-number="1.24" class="anchored" data-anchor-id="new-york-times-article-on-r"><span class="header-section-number">1.24</span> 2009 New York Times Article on R</h2>
+<div id="fig-NYTR" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<iframe width="100%" height="600" src="./images/2009NewYorkTimes.pdf">
+</iframe>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.9: 2009 New York Times Article on R</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="nature-article-on-r" class="level2" data-number="1.25">
+<h2 data-number="1.25" class="anchored" data-anchor-id="nature-article-on-r"><span class="header-section-number">1.25</span> 2015 Nature Article on R</h2>
+<div id="fig-NatureArticleR" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<iframe width="100%" height="600" src="./images/2015NatureArticle.pdf">
+</iframe>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1.10: 2015 Nature Article on R</figcaption><p></p>
+</figure>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Part01.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Part02.html" class="pagination-link">
+        <span class="nav-page-text">Returns</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Financial Modeling using R was written by Muhammad Yaseen.</div>   
+    <div class="nav-footer-right">This book was built with <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+
+</body></html>
